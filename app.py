@@ -8,7 +8,7 @@ import io
 app = Flask(__name__)
 
 # Load the trained model from the .pkl file
-with open('RandomForest_model.pkl', 'rb') as model_file:
+with open('model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Define the columns expected in the input data
